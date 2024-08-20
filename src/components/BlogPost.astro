@@ -1,0 +1,23 @@
+---
+import { Formatter } from "@utils/formarter";
+
+const { frontmatter, url } = Astro.props;
+---
+
+<div class="lg:flex-col">
+  <img
+    class="object-cover w-full h-56 rounded-lg"
+    src={frontmatter.image}
+    alt={frontmatter.title}
+  />
+
+  <div class="flex flex-col justify-between py-6">
+    <a href={url} class="text-xl font-semibold hover:underline">
+      {frontmatter.title}
+    </a>
+
+    <span class="text-sm text-gray-300 font-light"
+      >{Formatter.formatDate(frontmatter.date)}
+    </span>
+  </div>
+</div>

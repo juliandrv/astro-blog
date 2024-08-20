@@ -1,0 +1,32 @@
+---
+import { ViewTransitions } from "astro:transitions";
+
+import "../styles/blog.css";
+
+interface Props {
+  title?: string;
+  frontmatter?: object | any;
+}
+
+const { title /*  ...rest */ } = Astro.props;
+// const { frontmatter } = rest;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <ViewTransitions />
+  </head>
+  <body class="bg-gray-900">
+    <a href="/" id="btn-back">&larr; Regresar</a>
+
+    <main class="mx-auto mb-10 max-w-5xl px-2 py-2">
+      <slot />
+    </main>
+  </body>
+</html>
