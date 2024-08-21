@@ -20,20 +20,20 @@ const frontmatter = post.data;
     width={500}
     height={500}
     quality="low"
-    loading="lazy"
+    loading="eager"
     transition:name={`${post.slug}-image`}
   />
 
   <div class="flex flex-col justify-between py-6 lg:mx-6">
     <a
       href={`/posts/${post.slug}`}
-      class="text-xl font-semibold hover:underline"
+      class="text-xl text-white font-semibold hover:underline"
     >
       {frontmatter.title}
     </a>
 
-    <span class="text-sm text-gray-300 font-light"
-      >{Formatter.formatDate(frontmatter.date)}
+    <span class="text-sm text-gray-300 font-light">
+      {Formatter.formatDate(frontmatter.date)}
     </span>
   </div>
 </div>
