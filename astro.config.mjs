@@ -10,4 +10,5 @@ export default defineConfig({
 		service: squooshImageService(),
 	},
 	site: "https://juliandrv-blog.vercel.app",
+	publicDir: "./public",
 });
