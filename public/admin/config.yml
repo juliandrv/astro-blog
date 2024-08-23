@@ -1,6 +1,6 @@
 backend:
-  #name: git-gateway
-  branch: main # Asegúrate de que este sea el nombre de tu rama principal
+  name: test-repo
+  # branch: main # Asegúrate de que este sea el nombre de tu rama principal
 
 media_folder: "src/content/blog/images" # Donde se guardarán las imágenes subidas
 public_folder: "images" # Ruta pública a las imágenes
