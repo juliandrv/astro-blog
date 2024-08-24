@@ -23,11 +23,25 @@ const { title } = Astro.props;
 			href={new URL("rss.xml", Astro.site)}
 		/>
 
+		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 		<ViewTransitions />
 	</head>
 	<body class="bg-gray-900">
 		<main class="mx-auto mb-10 max-w-5xl px-5 md:px-2 py-2">
 			<slot />
 		</main>
+
+		<script>
+			if (window.netlifyIdentity) {
+			  window.netlifyIdentity.on("init", (user) => {
+				if (!user) {
+				  window.netlifyIdentity.on("login", () => {
+					document.location.href = "/admin/";
+				  });
+				}
+			  });
+			}
+		  </script>
 	</body>
 </html>
