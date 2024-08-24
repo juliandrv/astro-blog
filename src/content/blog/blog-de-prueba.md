@@ -3,7 +3,7 @@ title: Blog de Prueba
 date: 2024-08-23T23:11:00.000Z
 description: Este es un blog de prueba
 author: bob-williams
-image: images/drawonyourscreen-2022-10-17-21-45-02.svg
+image: images/vlcsnap-2024-03-24-18h14m08s777.png
 tags:
   - test
 isDraft: false
