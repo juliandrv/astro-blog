@@ -1,6 +1,6 @@
 ---
 title: Post desde DecapCMS
-date: 2024-08-23T23:34:00.000Z
+date: 2024-08-23T23:38:00.000Z
 description: Otro post de prueba
 image: images/explore2.jpg
 tags:
